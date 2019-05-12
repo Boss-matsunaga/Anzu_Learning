@@ -42,7 +42,7 @@ def PreProcess(dirname, filename, var_amount = 3):
 ################################
 ######### モデルの構築 #########
 ################################
-def BuildCNN(ipshape=(32, 32, 3), num_classes=3):
+def BuildCNN(ipshape=(32, 32, 3), num_classes=1):
     model = Sequential()
 
     model.add(Conv2D(24, 3, padding='same', input_shape=ipshape))
